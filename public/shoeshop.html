@@ -11,15 +11,20 @@
 <body>
     <nav>
         <div class="navbar">
-            <img class="logo" src="./pictures/logo.png" alt="" srcset="">
+            <div class="logo-container">
+                <img class="logo" src="./pictures/logo.png" alt="" srcset="">
+            </div>
             <ul class="nav">
-                <li><a href=".html">Home</a></li>
-                <li><a href=".html">About</a></li>
-                <li><a href=".html">Shop</a></li>
-                <li><div>cart</div></li>
+                <li class="nav-home"><a href="#home">Home</a></li>
+                <li class="nav-about"><a href="#about">About</a></li>
+                <li class="nav-shop"><a href="#">Shop</a></li>
+                <li class="nav-cart">
+                    <div>cart</div>
+                </li>
             </ul>
         </div>
     </nav>
+
     <section class="section section1" id="home">
         <div class="content content-container section1-content">
             <div class="header3 white-color">WANTING A GOOD QUALITY SHOES AND GOOD FOR FASHION?</div>
@@ -29,40 +34,78 @@
             <button class="btn btn-secondary"><a href="#">BUY NOW</a></button>
         </div>
         <div class="content content-image-slider">
+            <div class="left-icon-slider"><svg width="41" height="55" viewBox="0 0 41 55" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="8.51133" height="43.4155" rx="4.25567"
+                    transform="matrix(-0.707107 0.707107 -0.791907 -0.610642 40.3994 48.7005)" fill="#C4C4C4" />
+                <rect width="8.51133" height="43.4155" rx="4.25567"
+                    transform="matrix(-0.5 -0.866025 0.794796 -0.606877 5.89297 33.7189)" fill="#C4C4C4" />
+            </svg>
+        </div>
             <img src="./pictures/shoe.png" alt="" srcset="">
-            <div class="left-icon-slider"></div>
-            <div class="right-icon-slider"></div>
+           
+            <div class="right-icon-slider">
+                <svg width="41" height="55" viewBox="0 0 41 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="8.51133" height="43.4155" rx="4.25567"
+                        transform="matrix(0.707107 -0.707107 0.791907 0.610642 0 6.01842)" fill="#C4C4C4" />
+                    <rect width="8.51133" height="43.4155" rx="4.25567"
+                        transform="matrix(0.5 0.866025 -0.794796 0.606877 34.5065 21)" fill="#C4C4C4" />
+                </svg>
+            </div>
             <div class="dot-container">
                 <div class="dot dot1"></div>
                 <div class="dot dot2 pink"></div>
                 <div class="dot dot3"></div>
             </div>
         </div>
+        <div class="background-design">
+            <svg width="5500" height="556" viewBox="0 0 1280 556" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M757.978 213C771.452 89 1280 0 1280 0L1292.5 556H-22.5C-22.5 556 744.504 337 757.978 213Z"
+                    fill="#573E81" />
+            </svg>
+        </div>
     </section>
     <section class="section section2 white-color" id="about">
-        <div class="header1 ">About</div>
-        <div class="content content-about">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit soluta, cumque totam, quam minus quod
-            reprehenderit culpa sint harum tenetur pariatur laudantium cupiditate magnam magni alias distinctio hic
-            repellendus neque.
+        <div class="header1 ">About</div><br>
+        <div class="content content-about header2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
         </div>
-        <div class="content content-about">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit soluta, cumque totam, quam minus quod
-            reprehenderit culpa sint harum tenetur pariatur laudantium cupiditate magnam magni alias distinctio hic
-            repellendus neque.
+        <div class="content content-about header2">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            Aldus PageMaker including versions of Lorem Ipsum.
         </div>
     </section>
     <section class="section section3 white-color" id="customer-review">
         <div class="header1">Customer Feedback</div>
         <div class="feedbacks-container">
             <div class="feedback">
-                <img src="" alt="">
+                <img src="./pictures/pexels-andrea-piacquadio-3777557.jpg" alt="">
                 <div class="heading3 feedback-content">This website is awesome</div>
-                <div class="feedback-initial">Someone Famous</div>
+                <div class="feedback-initial">-Someone Famous</div>
             </div>
+            <div class="feedback">
+                <img src="./pictures/pexels-edmond-dantès-4347368.jpg" alt="">
+                <div class="heading3 feedback-content">This website is awesome</div>
+                <div class="feedback-initial">-Someone Famous</div>
+            </div>
+            <div class="feedback">
+                <img src="./pictures/pexels-ray-piedra-1537671.jpg" alt="">
+                <div class="heading3 feedback-content">This website is awesome</div>
+                <div class="feedback-initial">-Someone Famous</div>
+            </div>
+
         </div>
     </section>
-    
+
     <footer></footer>
 </body>
 

@@ -1,12 +1,30 @@
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    transition: 2s;
+}
+.not-visible{
+
 }
 body{
     background-color: #010020;
     height: 200vh;
     align-content: center;
-    margin: 0px;
-    padding: 0px;
+
+}
+.background-design{
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+
+}
+.background-design svg{
+    height: 100vh;
+    margin: 0;
 }
 .white-color{
     color: #cccc;
@@ -14,44 +32,44 @@ body{
 .logo{
     height: 20px;
     width: 70px;
-    margin-right: 60%;
+}
+.logo-container{
+    flex-grow: 1;
 }
 .navbar{
-    /*position: fixed;
-    */display: flex;
+    margin: 30px;
+    position: relative;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 1400px;
-
-
 }
 .nav{
     display: flex;
     flex-wrap: wrap;
-    justify-content: right;
 }
-.nav li a, .nav li div {
-    margin-right: 70px;
+.nav li a , .nav div{
     color: antiquewhite;
     text-decoration: none;
+    margin-right:30px ;
 }
 .nav li{
     list-style: none;
 }
 .section{
-    height: 90vh;
-    padding: 0 5%;
-    max-width: 1400px;
-
+    min-height: 90vh;
+    padding: 5%;
 }
 .section1{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .content-image-slider{
     flex-grow: 1;
-    margin-left: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .section1-content{
     flex-grow: 1;
@@ -88,8 +106,6 @@ body{
     font-size: 20px;
 }.header3{
     font-size: 15px;
-    border-bottom: 2px dashed pink;
-    
 }
 .section2{
     background-color: rgb(113, 113, 124);
@@ -97,4 +113,33 @@ body{
 .section3{
     background-color: #eee;
     color: #555;
+}
+.content-about{
+    margin-bottom:30px;
+}
+.feedbacks-container{
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.feedback {
+    position: relative;
+    font-size: 20px;
+    width: 270px;
+    box-shadow: 2px 2px 20px rgb(165, 165, 165);
+}
+.feedback img{
+    position: relative;
+    height: 400px;
+}
+.feedback-initial{
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: end;
+}
+@media only screen and (max-width:700px){
+
 }
