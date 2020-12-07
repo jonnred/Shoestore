@@ -28,7 +28,6 @@ body{
 
 }
 .background-design svg{
-    height: 100vh;
     margin: 0;
 }
 .white-color{
@@ -165,8 +164,9 @@ body{
 .feedback-content{
     margin: 20px;
 }
-@media only screen and (max-width:850px){
-    *{
+@media only screen and (max-width:470px){
+    .header1{
+        font-size: 35px;
 
     }
 }
