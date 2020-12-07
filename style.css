@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    font-family: 'Montserrat',
+    sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -17,10 +19,10 @@ body{
     background-color: #010020;
     height: 200vh;
     align-content: center;
+    overflow-x: hidden;
 
 }
 .background-design{
-    height: 100vh;
     position: absolute;
     z-index: -1;
 
@@ -74,15 +76,23 @@ body{
     align-items: center;
     justify-content: space-around;
 }
+.content-image-slider img{
+    filter: drop-shadow(10px 2px 10px #222);
+}
 .section1-content{
     flex-grow: 1;
 }
+.section1-content-main{
+    margin: 10px 0;
+}
 .btn{
     padding: 10px;
-    margin: 10px;
-    width: 100px;
+    margin-top: 50px;
+    width: 130px;
+    height: 50px;
     border: none;
-
+    border-radius: 10px;
+    
 }
 .btn-primary{
     background-color: green;
@@ -92,7 +102,7 @@ body{
     color: aliceblue;
     text-decoration: none;
     font-weight: 600;
-
+    font-size: 20px;
 }
 .btn-secondary{
     background-color: white;
@@ -103,7 +113,7 @@ body{
     text-decoration: none;
 }
 .header1{
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 600;
 }.header2{
     font-size: 20px;
@@ -113,15 +123,20 @@ body{
 .section2{
     background-color: rgb(113, 113, 124);
 }
+.section2-about{
+    color: #ccc;
+}
 .section3{
     background-color: #eee;
     color: #555;
 }
 .content-about{
     margin-bottom:30px;
+    max-width: 1400px;
 }
 .feedbacks-container{
-    height: 80vh;
+    margin-top: 50px;
+    min-height: 80vh;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +148,10 @@ body{
     font-size: 20px;
     width: 270px;
     box-shadow: 2px 2px 20px rgb(165, 165, 165);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
 }
 .feedback img{
     position: relative;
@@ -140,9 +159,14 @@ body{
 }
 .feedback-initial{
     font-weight: 600;
-    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: end;
 }
-@media only screen and (max-width:700px){
+.feedback-content{
+    margin: 20px;
+}
+@media only screen and (max-width:850px){
+    *{
 
+    }
 }
